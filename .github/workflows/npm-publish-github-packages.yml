@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./travel_booking_backend
-          file: ./travel_booking_backend/backend.Dockerfile
+          file: ./travel_booking_backend/Dockerfile.backend
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ansible-backend:latest
 
@@ -39,6 +39,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./travel_booking_frontend
-          file: ./travel_booking_frontend/frontend.Dockerfile
+          file: ./travel_booking_frontend/Dockerfile.frontend
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ansible-frontend:latest
