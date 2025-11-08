@@ -23,7 +23,7 @@ const ViewAllLocations = () => {
 
   const retrieveAllLocation = async () => {
     const response = await axios.get(
-      "http://localhost:2000/api/location/fetch/all"
+      "http://localhost:8080/api/location/fetch/all"
     );
     console.log(response.data);
     return response.data;
@@ -31,7 +31,7 @@ const ViewAllLocations = () => {
 
   const deleteLocation = (locationId, e) => {
     fetch(
-      "http://localhost:2000/api/location/delete?locationId=" + locationId,
+      "http://localhost:8080/api/location/delete?locationId=" + locationId,
       {
         method: "DELETE",
         headers: {

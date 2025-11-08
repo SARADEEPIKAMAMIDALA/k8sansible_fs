@@ -22,7 +22,7 @@ const AddTourActivity = () => {
   const saveTourActivity = (e) => {
     let data = { tourId: tour.id, name, description };
 
-    fetch("http://localhost:2000/api/tour/activity/add", {
+    fetch("http://localhost:8080/api/tour/activity/add", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -95,7 +95,7 @@ const AddTourActivity = () => {
 
   const deleteActivity = (activityId) => {
     fetch(
-      "http://localhost:2000/api/tour/activity/delete?activityId=" + activityId,
+      "http://localhost:8080/api/tour/activity/delete?activityId=" + activityId,
       {
         method: "DELETE",
         headers: {

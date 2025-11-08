@@ -75,7 +75,7 @@ const UpdateEventForm = () => {
     formData.append("availableTickets", event.availableTickets);
 
     axios
-      .put("http://localhost:2000/api/event/update", formData, {
+      .put("http://localhost:8080/api/event/update", formData, {
         headers: {
           // Authorization: "Bearer " + admin_jwtToken, // Replace with your actual JWT token
         },

@@ -20,7 +20,7 @@ const AddTourMeal = () => {
   const saveTourMeal = (e) => {
     let data = { tourId: tour.id, name, description };
 
-    fetch("http://localhost:2000/api/tour/meal/add", {
+    fetch("http://localhost:8080/api/tour/meal/add", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -92,7 +92,7 @@ const AddTourMeal = () => {
   };
 
   const deleteMeal = (mealId) => {
-    fetch("http://localhost:2000/api/tour/meal/delete?mealId=" + mealId, {
+    fetch("http://localhost:8080/api/tour/meal/delete?mealId=" + mealId, {
       method: "DELETE",
       headers: {
         Accept: "application/json",

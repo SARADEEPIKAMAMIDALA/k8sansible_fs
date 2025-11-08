@@ -32,7 +32,7 @@ const TourCarousel = (tour) => {
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src={"http://localhost:2000/api/tour/" + tour.item.image1}
+            src={"http://localhost:8080/api/tour/" + tour.item.image1}
             class="d-block w-100"
             alt="..."
             style={{
@@ -42,7 +42,7 @@ const TourCarousel = (tour) => {
         </div>
         <div class="carousel-item">
           <img
-            src={"http://localhost:2000/api/tour/" + tour.item.image2}
+            src={"http://localhost:8080/api/tour/" + tour.item.image2}
             class="d-block w-100"
             alt="..."
             style={{
@@ -52,7 +52,7 @@ const TourCarousel = (tour) => {
         </div>
         <div class="carousel-item">
           <img
-            src={"http://localhost:2000/api/tour/" + tour.item.image3}
+            src={"http://localhost:8080/api/tour/" + tour.item.image3}
             class="d-block w-100"
             alt="..."
             style={{

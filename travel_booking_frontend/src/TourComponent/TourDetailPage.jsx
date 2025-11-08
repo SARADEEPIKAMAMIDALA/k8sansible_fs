@@ -99,7 +99,7 @@ const TourDetailPage = () => {
 
   const retrieveTour = async () => {
     const response = await axios.get(
-      "http://localhost:2000/api/tour/fetch?tourId=" + tourId
+      "http://localhost:8080/api/tour/fetch?tourId=" + tourId
     );
     console.log(response.data);
     return response.data;

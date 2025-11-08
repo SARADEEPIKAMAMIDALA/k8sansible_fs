@@ -23,14 +23,14 @@ const ViewAllLodges = () => {
 
   const retrieveAllLodge = async () => {
     const response = await axios.get(
-      "http://localhost:2000/api/lodge/fetch/all"
+      "http://localhost:8080/api/lodge/fetch/all"
     );
     console.log(response.data);
     return response.data;
   };
 
   const deleteLodge = (lodgeId, e) => {
-    fetch("http://localhost:2000/api/lodge/delete?lodgeId=" + lodgeId, {
+    fetch("http://localhost:8080/api/lodge/delete?lodgeId=" + lodgeId, {
       method: "DELETE",
       headers: {
         Accept: "application/json",

@@ -23,7 +23,7 @@ const ViewAllTransports = () => {
 
   const retrieveAllTransport = async () => {
     const response = await axios.get(
-      "http://localhost:2000/api/transport/fetch/all"
+      "http://localhost:8080/api/transport/fetch/all"
     );
     console.log(response.data);
     return response.data;
@@ -31,7 +31,7 @@ const ViewAllTransports = () => {
 
   const deleteTransport = (transportId, e) => {
     fetch(
-      "http://localhost:2000/api/transport/delete?transportId=" + transportId,
+      "http://localhost:8080/api/transport/delete?transportId=" + transportId,
       {
         method: "DELETE",
         headers: {

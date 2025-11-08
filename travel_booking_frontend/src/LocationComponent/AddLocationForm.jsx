@@ -13,7 +13,7 @@ const AddLocationForm = () => {
   const saveLocation = (e) => {
     let data = { name, description };
 
-    fetch("http://localhost:2000/api/location/add", {
+    fetch("http://localhost:8080/api/location/add", {
       method: "POST",
       headers: {
         Accept: "application/json",
