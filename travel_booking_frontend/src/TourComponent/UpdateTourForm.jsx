@@ -39,7 +39,7 @@ const UpdateTourForm = () => {
 
   const retrieveAllTransports = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/transport/fetch/all"
+      "http://localhost:2000/api/transport/fetch/all"
     );
     return response.data;
   };
@@ -57,7 +57,7 @@ const UpdateTourForm = () => {
 
   const retrieveAllLocations = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/location/fetch/all"
+      "http://localhost:2000/api/location/fetch/all"
     );
     return response.data;
   };
@@ -75,7 +75,7 @@ const UpdateTourForm = () => {
 
   const retrieveAllLodge = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/lodge/fetch/all"
+      "http://localhost:2000/api/lodge/fetch/all"
     );
     return response.data;
   };
@@ -122,7 +122,7 @@ const UpdateTourForm = () => {
       ? tour.endDate
       : convertToEpochTime(tour.endDate);
 
-    fetch("http://localhost:8080/api/tour/update/detail", {
+    fetch("http://localhost:2000/api/tour/update/detail", {
       method: "PUT",
       headers: {
         Accept: "application/json",

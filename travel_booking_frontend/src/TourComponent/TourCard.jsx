@@ -31,7 +31,7 @@ const TourCard = (tour) => {
           {/* Left side - Company Logo */}
           <div className="col-md-4 d-flex align-items-center justify-content-center">
             <img
-              src={"http://localhost:8080/api/tour/" + tour.item.image1}
+              src={"http://localhost:2000/api/tour/" + tour.item.image1}
               className="card-img-top rounded img-fluid"
               alt="event image"
               style={{

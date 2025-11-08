@@ -38,7 +38,7 @@ const EventBookingPage = () => {
   };
 
   const payAndConfirmBooking = (e) => {
-    fetch("http://localhost:8080/api/booking/add", {
+    fetch("http://localhost:2000/api/booking/add", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -104,7 +104,7 @@ const EventBookingPage = () => {
                   {/* Left side - Company Logo */}
                   <div className="col-md-4 d-flex align-items-center justify-content-center">
                     <img
-                      src={"http://localhost:8080/api/event/" + event.image}
+                      src={"http://localhost:2000/api/event/" + event.image}
                       className="card-img-top rounded img-fluid"
                       alt="event image"
                       style={{

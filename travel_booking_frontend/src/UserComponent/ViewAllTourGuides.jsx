@@ -19,7 +19,7 @@ const ViewAllTourGuides = () => {
 
   const retrieveAllUser = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/user/fetch/role-wise?role=Tour Guide",
+      "http://localhost:30025/api/user/fetch/role-wise?role=Tour Guide",
       {
         headers: {
           //   Authorization: "Bearer " + admin_jwtToken, // Replace with your actual JWT token

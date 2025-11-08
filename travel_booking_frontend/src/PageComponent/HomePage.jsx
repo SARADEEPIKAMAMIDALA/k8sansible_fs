@@ -22,7 +22,7 @@ const HomePage = () => {
 
   const retrieveAllLocations = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/location/fetch/all"
+      "http://localhost:2000/api/location/fetch/all"
     );
     return response.data;
   };

@@ -35,7 +35,7 @@ const UserRegister = () => {
 
     let jwtToken;
 
-    fetch("http://localhost:8080/api/user/register", {
+    fetch("http://localhost:30025/api/user/register", {
       method: "POST",
       headers: {
         Accept: "application/json",

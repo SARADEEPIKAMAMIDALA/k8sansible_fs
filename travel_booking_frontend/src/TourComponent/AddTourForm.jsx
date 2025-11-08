@@ -15,7 +15,7 @@ const AddTourForm = () => {
 
   const retrieveAllTransports = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/transport/fetch/all"
+      "http://localhost:2000/api/transport/fetch/all"
     );
     return response.data;
   };
@@ -33,7 +33,7 @@ const AddTourForm = () => {
 
   const retrieveAllLocations = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/location/fetch/all"
+      "http://localhost:2000/api/location/fetch/all"
     );
     return response.data;
   };
@@ -51,7 +51,7 @@ const AddTourForm = () => {
 
   const retrieveAllLodge = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/lodge/fetch/all"
+      "http://localhost:2000/api/lodge/fetch/all"
     );
     return response.data;
   };
@@ -191,7 +191,7 @@ const AddTourForm = () => {
     formData.append("image3", selectedImage3);
 
     axios
-      .post("http://localhost:8080/api/tour/add", formData, {
+      .post("http://localhost:2000/api/tour/add", formData, {
         headers: {
           //       Authorization: "Bearer " + guide_jwtToken, // Replace with your actual JWT token
         },

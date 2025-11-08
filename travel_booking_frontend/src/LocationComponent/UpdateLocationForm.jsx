@@ -17,7 +17,7 @@ const UpdateLocationForm = () => {
   const saveLocation = (e) => {
     let data = { id, name, description };
 
-    fetch("http://localhost:8080/api/location/update", {
+    fetch("http://localhost:2000/api/location/update", {
       method: "PUT",
       headers: {
         Accept: "application/json",

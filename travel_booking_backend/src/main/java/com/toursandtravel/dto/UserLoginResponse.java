@@ -1,12 +1,15 @@
 package com.toursandtravel.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-public class UserLoginResponse extends CommonApiResponse {
-
-	private UserDto user;
-	
-	private String jwtToken;
-
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserLoginResponse {
+    private boolean success;
+    private String responseMessage;
+    private String jwtToken;
+    private UserDto user;   // <-- changed from User to UserDto
 }

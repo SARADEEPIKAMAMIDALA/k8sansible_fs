@@ -1,36 +1,69 @@
 package com.toursandtravel.dto;
 
-import org.springframework.beans.BeanUtils;
-
 import com.toursandtravel.entity.User;
 
-import lombok.Data;
-
-@Data
 public class RegisterUserRequestDto {
 
-	private String firstName;
+    private String emailId;
+    private String password;
+    private String role;
 
-	private String lastName;
+    // ✅ Add address-related fields
+    private String city;
+    private String street;
+    private String pincode;
 
-	private String emailId;
+    public RegisterUserRequestDto() {}
 
-	private String password;
+    // --- Getters and Setters ---
+    public String getEmailId() {
+        return emailId;
+    }
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
 
-	private String phoneNo;
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	private String role;
+    public String getRole() {
+        return role;
+    }
+    public void setRole(String role) {
+        this.role = role;
+    }
 
-	private String street;
+    public String getCity() {
+        return city;
+    }
+    public void setCity(String city) {
+        this.city = city;
+    }
 
-	private String city;
+    public String getStreet() {
+        return street;
+    }
+    public void setStreet(String street) {
+        this.street = street;
+    }
 
-	private int pincode;
+    public String getPincode() {
+        return pincode;
+    }
+    public void setPincode(String pincode) {
+        this.pincode = pincode;
+    }
 
-	public static User toUserEntity(RegisterUserRequestDto registerUserRequestDto) {
-		User user = new User();
-		BeanUtils.copyProperties(registerUserRequestDto, user);
-		return user;
-	}
-
+    // ✅ Convert DTO to Entity
+    public static User toUserEntity(RegisterUserRequestDto dto) {
+        User user = new User();
+        user.setEmailId(dto.getEmailId());
+        user.setPassword(dto.getPassword());
+        user.setRole(dto.getRole());
+        return user;
+    }
 }

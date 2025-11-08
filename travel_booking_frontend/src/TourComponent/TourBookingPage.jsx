@@ -44,7 +44,7 @@ const TourBookingPage = () => {
   }, [paymentRequest.noOfTickets]);
 
   const payAndConfirmBooking = (e) => {
-    fetch("http://localhost:8080/api/tour/booking/add", {
+    fetch("http://localhost:2000/api/tour/booking/add", {
       method: "POST",
       headers: {
         Accept: "application/json",

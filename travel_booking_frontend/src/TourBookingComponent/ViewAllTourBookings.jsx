@@ -45,7 +45,7 @@ const ViewAllTourBookings = () => {
 
   const retrieveAllTourBookings = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/tour/booking/fetch/all"
+      "http://localhost:2000/api/tour/booking/fetch/all"
     );
     console.log(response.data);
     return response.data;
@@ -107,7 +107,7 @@ const ViewAllTourBookings = () => {
                       <td>
                         <img
                           src={
-                            "http://localhost:8080/api/tour/" +
+                            "http://localhost:2000/api/tour/" +
                             booking.tour.image1
                           }
                           class="img-fluid"

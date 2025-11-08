@@ -14,10 +14,11 @@ const UpdateTransportForm = () => {
 
   let navigate = useNavigate();
 
+
   const saveTransport = (e) => {
     let data = { id, name, description };
 
-    fetch("http://localhost:8080/api/transport/update", {
+    fetch("http://localhost:2000/api/transport/update", {
       method: "PUT",
       headers: {
         Accept: "application/json",

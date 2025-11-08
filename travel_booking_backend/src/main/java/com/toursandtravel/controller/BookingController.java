@@ -17,7 +17,7 @@ import com.toursandtravel.resource.BookingResource;
 
 @RestController
 @RequestMapping("api/tour/booking")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 public class BookingController {
 
 	@Autowired

@@ -13,7 +13,7 @@ const AddLodgeForm = () => {
   const saveLodge = (e) => {
     let data = { type, description };
 
-    fetch("http://localhost:8080/api/lodge/add", {
+    fetch("http://localhost:2000/api/lodge/add", {
       method: "POST",
       headers: {
         Accept: "application/json",

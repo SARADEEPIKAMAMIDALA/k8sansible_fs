@@ -32,14 +32,14 @@ const ViewGuideTours = () => {
 
   const retrieveAllTour = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/tour/fetch/guide-wise?tourGuideId=" + guide.id
+      "http://localhost:2000/api/tour/fetch/guide-wise?tourGuideId=" + guide.id
     );
     console.log(response.data);
     return response.data;
   };
 
   const deleteTour = (tourId, e) => {
-    fetch("http://localhost:8080/api/tour/delete?tourId=" + tourId, {
+    fetch("http://localhost:2000/api/tour/delete?tourId=" + tourId, {
       method: "DELETE",
       headers: {
         Accept: "application/json",
@@ -145,7 +145,7 @@ const ViewGuideTours = () => {
                     <tr>
                       <td>
                         <img
-                          src={"http://localhost:8080/api/tour/" + tour.image1}
+                          src={"http://localhost:2000/api/tour/" + tour.image1}
                           class="img-fluid"
                           alt="event_pic"
                           style={{

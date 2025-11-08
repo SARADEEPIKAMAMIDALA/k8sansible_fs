@@ -13,7 +13,7 @@ const AddTransportForm = () => {
   const saveTransport = (e) => {
     let data = { name, description };
 
-    fetch("http://localhost:8080/api/transport/add", {
+    fetch("http://localhost:2000/api/transport/add", {
       method: "POST",
       headers: {
         Accept: "application/json",

@@ -28,7 +28,7 @@ const UpdateTourImage = () => {
     formData.append("image3", selectedImage3);
 
     axios
-      .put("http://localhost:8080/api/tour/update/images", formData, {
+      .put("http://localhost:2000/api/tour/update/images", formData, {
         headers: {
           //       Authorization: "Bearer " + guide_jwtToken, // Replace with your actual JWT token
         },
